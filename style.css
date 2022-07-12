@@ -28,6 +28,7 @@
 
 /* This will apply a fix to the header and footer so when you scroll it stays not compatible with a return to top button*/
 
+
 *{
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -51,9 +52,9 @@ a {
     color: black
 }
 
-#banner{
-    width: 100%;
-}
+/* #banner{
+    margin: 0;
+} */
 
 /* this forces my list items to display horizontally!  */
 li{
@@ -99,13 +100,15 @@ div {
   }
 
 .gif{
-    height: 500px;
-    width: 600px;
+    height: auto;
+    max-width: 40%;
 }
 
 /* add an image border for fun/learning */
 
-img{
+img, video{
+    height: auto;
+    max-width: 100%;
     border: 3px solid black;
 }
 
@@ -117,10 +120,6 @@ img{
     background-color: white;
 }
 
-.sponsor>img{
-    height: 400px;
-    width: 400px;
-}
 
 /* How do you fix it when an image is taller than its element containing it?
 use overflow:auto
