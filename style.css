@@ -13,6 +13,12 @@
     margin: 0 auto;
 } */
 
+/* How do you fix it when an image is taller than its element containing it?
+use overflow:auto
+
+use class selector .clearfix {
+    overflow: auto;
+} */
 
 /* To ensure elements are sized in a way that makes sense use this
 
@@ -30,8 +36,12 @@
 
 
 *{
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         
 }
 
 header {
@@ -41,33 +51,7 @@ header {
     height: auto;
     background-color: white;
     width: 100%;
-}
-
-nav{
-    border-bottom: 3px solid black;
-}
-
-a {
-    text-decoration: none;
-    color: black
-}
-
-/* #banner{
-    margin: 0;
-} */
-
-/* this forces my list items to display horizontally!  */
-li{
-    display: inline;
-    padding: 10px 20px 10px 20px;
-    font-weight: 700;
-    text-decoration: none;
-    overflow:auto;
-}
-
-h1{
-    float: left;
-    margin: 0 auto;
+    clear: both;
 }
 
 footer {
@@ -77,7 +61,54 @@ footer {
     height: 70px;
     background-color: white;
     width: 100%;
+    clear: both;
+    text-align: center;
   }
+
+nav{
+    text-align: center;
+    flex-direction: row;
+    border-bottom: 3px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+li{
+    display: inline;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+h1{
+    float: left;
+    display: inline;
+    margin: auto;
+}
+
+h2, .sponsor, .Links{
+    text-align: center;
+}
+
+.aboutcont{
+    display: inline;
+    text-align: center;
+    max-width: 600px;
+    height: 100px;
+    margin: 1em auto;
+}
+
+/* this forces my list items to display horizontally!  */
 
 body {
     background-color: rgb(236, 236, 236);
@@ -87,8 +118,10 @@ body {
 
 /* without a doubt the best way of getting your div elements to display next to each other, so fucking cool. */
 
+
 div {
     display: inline-block;
+    text-align: center;
     max-width: 600px;
     height: 100px;
     margin: 1em auto;
@@ -100,8 +133,19 @@ div {
   }
 
 .gif{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     height: auto;
     max-width: 40%;
+}
+
+.theRGRSquad{
+    align-items: stretch;
+}
+
+#lucozade{
+    height: 400px;
 }
 
 /* add an image border for fun/learning */
@@ -109,6 +153,7 @@ div {
 img, video{
     height: auto;
     max-width: 100%;
+    margin: auto;
     border: 3px solid black;
 }
 
@@ -119,11 +164,3 @@ img, video{
     width: 60px;
     background-color: white;
 }
-
-
-/* How do you fix it when an image is taller than its element containing it?
-use overflow:auto
-
-use class selector .clearfix {
-    overflow: auto;
-} */
