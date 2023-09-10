@@ -8,24 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> OLD STYLES  -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-    <section>
-        <nav>
-            <ul>
-                <h1>RunGunRez</h1>
-                <li><a href="" id="#top">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#squad">Meet the Squad</a></li>
-                <li><a href="#sponsor">Meet the Sponsor</a></li>
-                <li><a href="#reports">Link to our Reports</a></li>
-            </ul>
-        </nav>
-    </section>
-</header>
+        <section>
+            <nav class="d-flex justify-content-center border-bottom">
+                <ul class="d-flex justify-content-around align-items-center w-75">
+                    <h1 class="m-0">RunGunRez</h1>
+                    <li class="mx-3"><a href="" id="#top">Home</a></li>
+                    <li class="mx-3"><a href="#about">About</a></li>
+                    <li class="mx-3"><a href="#squad">Meet the Squad</a></li>
+                    <li class="mx-3"><a href="#sponsor">Meet the Sponsor</a></li>
+                    <li class="mx-3"><a href="#reports">Link to our Reports</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
     <a id="about"></a>
     <section id="banner">
         <img src="Assets\banner placeholder.png" alt="RGR Banner Placeholder">
@@ -41,10 +41,11 @@
             <h2>Meet the Squad</h2>
             <img class="gif" src="Assets\gif-potential.gif" alt="gif test">
     </section>
-        <article class="theRGRSquad d-flex flex-column align-items-center">
-            <div>
-        <h4>Sheriff "HalcyonLegion" Hooker</h4>
-            <img src="Assets\hooker.png" alt="Sheriff Hooker">
+    <section class="container my-3">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h4>Sheriff "HalcyonLegion" Hooker</h4>
+                <img class="img-fluid" src="Assets/" alt="Sheriff Hooker">
             <br>
             <span>Sheriff Hooker was raised on the sleepy streets of Stratford, Texas where he saw every kind of crime imaginable,
                 this small town boy moved to LA and quickly became a small town Sheriff and before he knew it he was fighting on the frontlines
@@ -53,8 +54,9 @@
                 under RGR justice every suspect is presumed guilty.</span>
             </div> 
         <div>
+            <div class="col-md-6 text-center">
             <h4>DCI "Trejager" Dillinger</h4>
-            <img src="Assets\dillinger.png"alt="DCI Dillinger">
+            <img class="img-fluid" src="Assets\dillinger.png"alt="DCI Dillinger">
             <br>
             <span>Detective Chief Inspector Dillinger was called to investigate reports of atrocities on the frontlines of the battlefield,
                 he is a keen documenter and collects video evidence of everything he sees, and he has seen some stuff man. DCI Dillinger became
@@ -62,9 +64,10 @@
                 committed by the RGR squad themselves, so a lot of these reports are redacted. The impact the RGR Squad has had on the good DCI's sanity is made
                 clear by his sadistic tendency of flying Manned Aerial Vehicles at terminal velocity into the heads of enemy infantry.</span>
         </div>
-        <div>
+        <div class="row">
+            <div class="col-md-6 text-center">
             <h4>Captain John "Sl1ckBackJack" Fingers</h4>
-            <img src="Assets\fingers.png"alt="Captain John Fingers">
+            <img class="img-fluid" src="Assets\fingers.png" alt="Captain John Fingers">
             <br>
             <span>John Fingers is an enigma, he carries the title Captain even though he was a Traffic Officer before war came calling.
                 His dedication and commitment to road safety and traffic laws had gotten him into hot water with his former superiors,
@@ -72,9 +75,9 @@
                 John Fingers had to cut a date short to ticket a car parked illegally outside his own house, the car tragically belonged to his date who was
                 absolutely not putting out that night. DCI Dillinger continues to investigate John's sordid and often uncomfortably erotic past.</span>
         </div>
-        <div>
+        <div class="col-md-6 text-center">
             <h4>Officer "BLUDSHOTE" Machete</h4>
-            <img src="Assets\machete.png"alt="Officer Machete">
+            <img class="img-fluid" src="Assets\machete.png" alt="Officer Machete">
             <br>
             <span>Wildcard of the RGR Squad, he loves nothing more than delivering his trusty Machete into the heart of his enemies and to see them
                 driven before him, he has also been known to scream "take it" and "right up cadbury alley". The throes of passion take
@@ -84,9 +87,10 @@
                 Due to recent allegations of battlefield brutality and war crimes against the RGR unit, Officer Machete has been doing some documentation of his own
                 in the hopes of painting the squad in a kinder light. However, as John Fingers once famously said "there ain't enough water in the ocean to [REDACTED]".</span>
         </div>
-        <div>
+        <div class="row">
+        <div class="col-md-6 text-center">
             <h4>Air Marshal "Saethwyr42" Lovejoy</h4>
-            <img src="Assets\lovejoy.png"alt="Air Marshal Lovejoy">
+            <img class="img-fluid" src="Assets\lovejoy.png" alt="Air Marshal Lovejoy">
             <br>
             <a id="sponsor"></a>
             <span>Air Marshal Lovejoy may well be the only member of the RGR Squad with any formal military training at all.
@@ -95,9 +99,9 @@
                 not for the reasons you'd expect. The "it's ectoplasm" excuse will only fly so far, if you forgive the pun. Whilst the case can be made that the use of aerial cluster munitions is
                 indeed a war crime, that investigation would have to fall under the jurisdiction of the air force, and they are totally cool with it.</span>
         </div>
-        <div>
+        <div class="col-md-6 text-center">
             <h4>Chairman "ObseleteOlive" DAO</h4>
-            <img src="Assets\dao.png"alt="Chairman DAO">
+            <img class="img-fluid" src="Assets\dao.png" alt="Chairman DAO">
             <br>
             <span>As elusive as the city of gold. Of all the RGR members you will not find one with such single-minded devotion to a weapon as our Chairman.
                 This goes to the extent that any game which does not include the DAO Shotgun, he will not play.
