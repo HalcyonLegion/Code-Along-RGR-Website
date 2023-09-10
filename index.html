@@ -13,18 +13,33 @@
 </head>
 <body>
     <header>
-        <section>
-            <nav class="d-flex justify-content-center border-bottom">
-                <ul class="d-flex justify-content-around align-items-center w-75">
-                    <h1 class="m-0">RunGunRez</h1>
-                    <li class="mx-3"><a href="" id="#top">Home</a></li>
-                    <li class="mx-3"><a href="#about">About</a></li>
-                    <li class="mx-3"><a href="#squad">Meet the Squad</a></li>
-                    <li class="mx-3"><a href="#sponsor">Meet the Sponsor</a></li>
-                    <li class="mx-3"><a href="#reports">Link to our Reports</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#"><h1 class="m-0">RunGunRez</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#squad">Meet the Squad</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#sponsor">Meet the Sponsor</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#reports">Link to our Reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <a id="about"></a>
     <section id="banner">
@@ -50,7 +65,7 @@
     <section class="container my-3">
         <div class="row">
             <div class="col-md-6 mb-5 mt-5 text-center">
-                <h4>Sheriff "HalcyonLegion" Hooker</h4>
+                <h4 class="mb-3">Sheriff "HalcyonLegion" Hooker</h4>
                 <img class="img-fluid mb-3" src="Assets/hooker.png" alt="Sheriff Hooker">
             <br>
             <span class="mb-5">Sheriff Hooker was raised on the sleepy streets of Stratford, Texas where he saw every kind of crime imaginable,
@@ -60,7 +75,7 @@
                 under RGR justice every suspect is presumed guilty.</span>
             </div>
             <div class="col-md-6 mb-5 mt-5 text-center">
-            <h4>DCI "Trejager" Dillinger</h4>
+            <h4 class="mb-3">DCI "Trejager" Dillinger</h4>
             <img class="img-fluid mb-3" src="Assets\dillinger.png"alt="DCI Dillinger">
             <br>
             <span class="mb-5">Detective Chief Inspector Dillinger was called to investigate reports of atrocities on the frontlines of the battlefield,
@@ -71,7 +86,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 mb-5 text-center">
-            <h4>Captain John "Sl1ckBackJack" Fingers</h4>
+                <h4 class="mb-3">Captain John "Sl1ckBackJack" Fingers</h4>
             <img class="img-fluid mb-3" src="Assets\fingers.png" alt="Captain John Fingers">
             <br>
             <span class="mb-5">John Fingers is an enigma, he carries the title Captain even though he was a Traffic Officer before war came calling.
@@ -81,7 +96,7 @@
                 absolutely not putting out that night. DCI Dillinger continues to investigate John's sordid and often uncomfortably erotic past.</span>
         </div>
         <div class="col-md-6 mb-5 text-center">
-            <h4>Officer "BLUDSHOTE" Machete</h4>
+            <h4 class="mb-3">Officer "BLUDSHOTE" Machete</h4>
             <img class="img-fluid mb-3" src="Assets\machete.png" alt="Officer Machete">
             <br>
             <span class="mb-5">Wildcard of the RGR Squad, he loves nothing more than delivering his trusty Machete into the heart of his enemies and to see them
@@ -94,10 +109,10 @@
         </div>
         <div class="row">
         <div class="col-md-6 mb-5 text-center">
-            <h4>Air Marshal "Saethwyr42" Lovejoy</h4>
+            <h4 class="mb-3">Air Marshal "Saethwyr42" Lovejoy</h4>
             <img class="img-fluid mb-3" src="Assets\lovejoy.png" alt="Air Marshal Lovejoy">
             <br>
-            <a id="sponsor"></a>
+            
             <span class="mb-5">Air Marshal Lovejoy may well be the only member of the RGR Squad with any formal military training at all.
                 This is evidenced by his cool, calm and collected delivery of payload after payload of pure firey death-from-above punishment onto the enemy.
                 Life in the cockpit can be lonely, and as a result the RGR squad have been issued several citations about the conditions in which these aerial vehicles are returned in,
@@ -105,7 +120,7 @@
                 indeed a war crime, that investigation would have to fall under the jurisdiction of the air force, and they are totally cool with it.</span>
         </div>
         <div class="col-md-6 mb-5 text-center">
-            <h4>Chairman "ObseleteOlive" DAO</h4>
+            <h4 class="mb-3">Chairman "ObseleteOlive" DAO</h4>
             <img class="img-fluid mb-3" src="Assets\dao.png" alt="Chairman DAO">
             <br>
             <span class="mb-5">As elusive as the city of gold. Of all the RGR members you will not find one with such single-minded devotion to a weapon as our Chairman.
@@ -116,12 +131,13 @@
                 unrecognisable in a hail of indiscriminate rounds.</span>
         </div>
     </section>
-    <section class="sponsor container my-3">
+    <section class="container my-3">
+        <a id="sponsor"></a>
         <div class="row">
             <div class="col-md-12 mb-5 mt-5 text-center">
                 <h2>Meet the Sponsor</h2>
                 <h3><p>Lucozade</p></h3>
-                <img id="lucozade" src="Assets\lucozade.jpg"alt="Lucozade">
+                <img id="lucozade" class="img-fluid mb-3" src="Assets\lucozade.jpg"alt="Lucozade">
                 <br><br>
                 <p>Lucozade Fuels War</p>
                 <p>You Cannot Live Without War, Without Lucozade</p>
@@ -143,4 +159,6 @@
             <img class="cage position-absolute" style="bottom: 10px; right: 10px; height: 60px;" src="Assets\RGR Nick Cage.jpg" alt="Nick Cage">
         </footer>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 </html>
